@@ -1,0 +1,123 @@
+body{
+    margin:0;
+    padding:0;
+}
+.container{
+    position:absolute;
+    width:100%;
+    height:100%;
+    padding:0;
+}
+.mainImage{
+    display:block;
+    position:relative;
+    width:655px;
+    height: auto;
+    margin:50px 25% 20px 25%;
+}
+.Input{
+    display:flex;
+    position:relative;
+    left:30%;
+    border:1px solid lightgrey;
+    width:40%;
+    height:45px;
+    box-shadow: 0 0 1px rgba(0,0,0,0.5);
+    align-items:center;
+    flex-shrink:1.0;
+}
+.Input .InputString{
+    position:relative;
+    width:480px;
+    top:8px;
+    margin-left:5px;
+}
+.InputString input{
+    outline:none;
+    font-size:24px;
+    border:none;
+    width:inherit;
+}
+.Input .tia , .micro{
+    margin:auto;
+    max-height: 45px;   
+}
+.Input .micro img{
+    max-height: 30px;
+}
+.Buttons{
+    display:flex;
+    position:relative;
+    width:40%;
+    height: auto;
+    margin-top:20px;
+    left:30%;   
+}
+.Buttons *{
+    position:relative;
+    display:table-cell;
+    background-color:rgb(243, 243, 243);
+    width:120px;
+    height:30px;
+    text-align:center;
+    font-family:Arial, Helvetica, sans-serif;
+    cursor: default;
+}
+.Buttons > .SearchButton{
+    margin:0px 0px 5px 150px ;
+    color: grey;
+}
+.Buttons > .LuckButton {
+    margin:0px 120px 5px 5px ;
+    color: grey;
+}
+.Buttons > .SearchButton:hover , .LuckButton:hover{
+    box-shadow: 0 0 1px rgba(0,0,0,0.5);
+    color:black;
+}
+.Buttons>* > a{
+    vertical-align: middle;
+}
+.Footer{
+    display:flex;
+    position:absolute;
+    flex-direction: column;
+    position:absolute;
+    width:100%;
+    bottom:0;
+
+}
+.Footer .CountryLayer , .DocsLayer{
+    width:100%;
+    height: 50%;
+    margin-top:0;
+    margin-bottom: 0;
+    box-shadow: 0 0 1px rgba(0,0,0,0.5);
+    font-size:16px;
+    color:rgb(145, 143, 143);
+}
+.CountryLayer *{
+    margin-left:15px;
+}
+.DocsLayer{
+    display:flex;
+    justify-content: space-between;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.DocsLayer > .Left{
+    width:300px;
+    position:relative;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    margin-left:15px;
+}
+.DocsLayer > .right{
+    width:400px;    
+    position:relative;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    margin-right:15px;
+}
