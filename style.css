@@ -3,17 +3,21 @@ body{
     padding:0;
 }
 .container{
+    display:flex;
     position:absolute;
+    justify-content: center;
     width:100%;
     height:100%;
     padding:0;
 }
+
 .center-wrapp{
     display:flex;
-    align-items:center;
+    align-self: center;
     flex-direction: column;
-    margin-top:auto;
+    margin-top:-88px;
 }
+
 .mainImage{
     display:block;
     position:relative;
@@ -24,7 +28,6 @@ body{
 .Input{
     display:flex;
     position:relative;
-    border:1px solid lightgrey;
     width:576px;
     height:45px;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
@@ -32,6 +35,7 @@ body{
     align-items:center;
     flex-shrink:1.0;
     margin:auto;
+    margin-top:15px;
 }
 .Input .InputString{
     position:relative;
